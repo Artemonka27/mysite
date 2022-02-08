@@ -22,7 +22,7 @@ function parallax(event) {
     bgBlock.style.cssText = `background-position: ${x * bgSpeed}px ${y * bgSpeed}px`;
 }*/
 
-const speed = 0.4;
+const speed = 0.3;
 const text = document.querySelector(".header__text");
 
 window.addEventListener("scroll", () => {
