@@ -1,31 +1,59 @@
-/*const blockDistance = document.querySelector(".parallax").getBoundingClientRect().top + window.scrollY;
-const contentBlock = document.querySelector(".parallax__content");
-const scrollSpeed = 1;
 
-window.addEventListener("scroll", () => {
-    let translate = window.scrollY - blockDistance;
-    contentBlock.style.cssText = `transform: translate(0, ${-translate * scrollSpeed}px);`;
-});*/
+let windowWidth = window.innerWidth;
+let pageWidth = document.documentElement.clientWidth;
+let scrollWidth = windowWidth - pageWidth;
 
-/*const block = document.querySelector(".parallax"),
-    bgBlock = document.querySelector(".parallax__bg"),
-    bgSpeed = 0.05,
-    middleHorizontal = block.clientWidth / 2,
-    middleVertical = block.clientHeight / 2;
+let popups = document.querySelectorAll(".popup");
+if (popups.length > 0) {
+    let popupActiveBtns = document.querySelectorAll(".popup-active-btn");
 
-requestAnimationFrame(parallax); 
-block.addEventListener("mousemove", parallax);
+    // ----------------- Active popup (active button) -------------------
+    popupActiveBtns.forEach((item) => {
+        item.addEventListener("click", (event) => {
+            let popup = document.querySelector(`.${event.target.dataset.popup}`);
+            popupActive(popup);
+        });
+    });
 
-function parallax(event) {
-    let x = middleHorizontal - event.x;
-    let y = middleVertical - event.y;
-    bgBlock.style.cssText = `background-position: ${x * bgSpeed}px ${y * bgSpeed}px`;
-}*/
+    // ----------------- Close popup (close button) -------------------
+    let popupCloseBtns = document.querySelectorAll(".popup__close");
+    popupCloseBtns.forEach((item) => {
+        item.addEventListener("click", (event) => {
+            let popup = event.target.closest(".popup");
+            popupClose(popup);
+        });
+    });
 
-const speed = 0.5;
-const text = document.querySelector(".header__text");
+    // ----------------- Close popup (empty space)  -------------------
+    popups.forEach((item) => {
+        item.addEventListener("click", (event) => {
+            let targetElem = event.target;
+            if (targetElem.classList.contains("popup")) {
+                popupClose(item);
+            }
+        });
+    });
 
-window.addEventListener("scroll", () => {
-    let scroll = window.scrollY * speed;
-    text.style.cssText = `transform: translate(0, ${-scroll}px);`;
-});
+    // ----------------- Close popup (Esc key)  -------------------
+    document.addEventListener("keydown", (event) => {
+        let activePopup = document.querySelector(".popup--active");
+        if (activePopup && event.key == "Escape") {
+            activePopup.classList.remove("popup--active");
+            popupClose(activePopup);
+        }
+    });
+
+
+    // ----------------- Functions -------------------
+    function popupActive(item) {
+        item.classList.add("popup--active");
+        document.body.style.overflow = "hidden";
+        document.body.style.paddingRight = `${scrollWidth}px`;
+    }
+
+    function popupClose(item) {
+        item.classList.remove("popup--active");
+        document.body.style.overflow = "auto";
+        document.body.style.paddingRight = "";
+    }
+}
