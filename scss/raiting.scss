@@ -1,0 +1,31 @@
+.raiting {
+    padding: 20px;
+    &__body {
+        position: relative;
+        display: inline-flex;
+        flex-direction: row-reverse;
+    }
+
+    &__input {
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 1;
+        &:checked, &:checked ~ .raiting__label {
+            color: rgb(235, 238, 44);
+        }
+    }
+
+    &__label {
+        font-size: 40px;
+        color: #fff;
+        cursor: pointer;
+        &:hover, &:hover ~ & {
+            color: rgb(251, 253, 145);
+        }
+    }
+
+    & button {
+    }
+}
+
