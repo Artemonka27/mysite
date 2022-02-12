@@ -6,6 +6,7 @@
     position: relative;
     z-index: 4;
     margin: 0 0 0 25px;
+    background: none;
     &::after, &::before, & span {
             position: absolute;
             left: 0;

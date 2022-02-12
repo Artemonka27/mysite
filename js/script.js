@@ -30,7 +30,8 @@ const carsharingOptions = new Swiper('.carsharing__swiper', {
             direction: "vertical"
         }
     },
-    simulateTouch: true,
+    mousewheel: true,
+    loop: true,
 });
 
 carsharingBlock.addEventListener("mouseleave", () => {
@@ -38,4 +39,21 @@ carsharingBlock.addEventListener("mouseleave", () => {
 });
 carsharingBlock.addEventListener("mouseenter", () => {
     carsharingOptions.autoplay.stop();
+});
+
+// Reviews-swiper
+const reviewsOptions = new Swiper(".reviews__swiper", {
+    speed: 1000,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+        el: '.reviews__pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true
+    },
+    mousewheel: true,
 });
