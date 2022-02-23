@@ -1,13 +1,9 @@
 const menu = document.querySelector(".nav-block__menu");
 const socials = document.querySelector(".nav-block__socials");
 
-window.addEventListener("resize", () => {
-    if (window.innerWidth <= 767) {
-        menu.append(socials);
-    } else {
-        menu.after(socials);
-    }
-});
+if (window.innerWidth <= 767) {
+    menu.append(socials);
+}
 
 
 const burger = document.querySelector(".burger");
