@@ -1,59 +1,31 @@
-// Burger
-const burgers = document.querySelectorAll(".burger");
-burgers.forEach((item) => {
-    item.addEventListener("click", (event) => {
-        const menu = document.querySelector(".header__menu");
-        event.currentTarget.classList.toggle("active");
-        menu.classList.toggle("active");
-    });
+const menu = document.querySelector(".nav-block__menu");
+const socials = document.querySelector(".nav-block__socials");
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth <= 767) {
+        menu.append(socials);
+    } else {
+        menu.after(socials);
+    }
 });
 
-// Carsharing-swiper
-const carsharingBlock = document.querySelector(".carsharing__swiper");
-const carsharingOptions = new Swiper('.carsharing__swiper', {
-    speed: 1000,
-    spaceBetween: 100,
-    autoplay: {
-        delay: 2000,
-    },
+
+const burger = document.querySelector(".burger");
+burger.addEventListener("click", (event) => {
+    const menu = document.querySelector(".nav-block__menu");
+    event.currentTarget.classList.toggle("active");
+    menu.classList.toggle("active");
+    document.body.classList.toggle("lock");
+});
+
+
+const mainSlider = new Swiper(".main-slider", {
     pagination: {
-        el: '.carsharing__swiper-pagination',
+        el: '.swiper-pagination',
         type: 'bullets',
-        clickable: true,
-    },
-    keyboard: {
-        enabled: true,
-        onlyInViewport: true
-    },
-    breakpoints: {
-        921: {
-            direction: "vertical"
-        }
-    },
-    mousewheel: true,
-    loop: true,
-});
-
-carsharingBlock.addEventListener("mouseleave", () => {
-    carsharingOptions.autoplay.start();
-});
-carsharingBlock.addEventListener("mouseenter", () => {
-    carsharingOptions.autoplay.stop();
-});
-
-// Reviews-swiper
-const reviewsOptions = new Swiper(".reviews__swiper", {
-    speed: 1000,
-    slidesPerView: 4,
-    spaceBetween: 30,
-    pagination: {
-        el: '.reviews__pagination',
-        type: 'bullets',
-        clickable: true,
-    },
-    keyboard: {
-        enabled: true,
-        onlyInViewport: true
-    },
-    mousewheel: true,
+        clickable: true
+      },
+      loop: true,
+      speed: 600,
+      spaceBetween: 30
 });
