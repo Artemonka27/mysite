@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-next:before {
+  content: "\e90b";
+}
+.icon-zoom:before {
+  content: "\e90a";
+}
 .icon-tg:before {
   content: "\e909";
 }
