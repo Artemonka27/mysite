@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title></title>
+		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+	<body>	  
+		<div class="wrapper">
+			<header class="header">
+				<div class="container header__container">
+					<a href="#" class="header__logo logo">
+						<img src="img/logo.png" alt="Логотип" class="logo__image">
+						<span class="logo__text">Сервис подбора и ведения линейного персонала</span>
+					</a>
+					<nav class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__link">Подбор персонала</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Вывод в штат</a>
+							</li>
+						</ul>
+					</nav>
+					<ul class="header__contacts header-contacts">
+						<li class="header-contacts__item">
+							<a href="tel:+78124994534" class="header-contacts__link header-contacts__link--tel icon-phone">+7 (812) 499-45-34</a>
+						</li>
+						<li class="header-contacts__item">
+							<a href="tel:+74994994534" class="header-contacts__link header-contacts__link--tel icon-phone">+7 (499) 499-45-34</a>
+						</li>
+						<li class="header-contacts__item">
+							<a href="mailto:info@sodst.ru" class="header-contacts__link header-contacts__link--mail icon-mail">info@sodst.ru</a>
+						</li>
+					</ul>
+					<button class="header__burger burger">
+						<span></span>
+					</button>
+				</div>
+			</header>
+			<main class="main">
+				<section class="hello outstaffing-hello">
+					<div class="container">
+						<div class="hello__body">
+							<div class="hello__info">
+								<h2 class="hello__title outstaffing-hello__title title"><span>Аутстаффинг</span> или 
+									вывод за штат персонала</h2>
+								<a class="button" href="#">Срочно вывести за штат</a>
+							</div>
+							<div class="hello__image outstaffing-hello__image">
+								<img src="img/outstaffing-hello/image.svg" alt="Два работника">
+							</div>
+						</div>
+						<ul class="outstaffing-hello__list outstaffing-hello-list">
+							<li class="outstaffing-hello-list__item">
+								<img src="img/outstaffing-hello/icons/01.svg" alt="" class="outstaffing-hello-list__icon">
+								<h3 class="outstaffing-hello-list__title">6 минут</h3>
+								<div class="outstaffing-hello-list__text">на оформление одного сотрудника</div>
+							</li>
+							<li class="outstaffing-hello-list__item">
+								<img src="img/outstaffing-hello/icons/02.svg" alt="" class="outstaffing-hello-list__icon">
+								<h3 class="outstaffing-hello-list__title">Никаких денег</h3>
+								<div class="outstaffing-hello-list__text">вперед за обслуживание, 
+									работаем на пост оплатной основе</div>
+							</li>
+							<li class="outstaffing-hello-list__item">
+								<img src="img/outstaffing-hello/icons/03.svg" alt="" class="outstaffing-hello-list__icon">
+								<h3 class="outstaffing-hello-list__title">Аккредитация</h3>
+								<div class="outstaffing-hello-list__text">в Роструде частного агентства занятости</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tarrifs">
+					<div class="container">
+						<h2 class="tarrifs__title title-dark">Тарифы</h2>
+						<div class="tarrifs__descr">Что входит в тот или иной тариф.</div>
+						<ul class="tarrifs__list">
+							<li data-tab="1" class="tarrifs__list-item tarrifs__list-item--active">1 чел.</li>
+							<li data-tab="2" class="tarrifs__list-item">2-5 чел.</li>
+							<li data-tab="3" class="tarrifs__list-item">6-10 чел.</li>
+							<li data-tab="4" class="tarrifs__list-item">11-20 чел.</li>
+							<li data-tab="5" class="tarrifs__list-item">21-40 чел.</li>
+							<li data-tab="6" class="tarrifs__list-item">41 и более чел.</li>
+						</ul>
+						<div class="tarrifs__body tarrifs-body">
+							<div data-tab="1" class="tarrifs-body__item tarrifs-body__item--active">
+								<div class="tarrifs-service">
+									<h3 class="tarrifs-service__title">При выводе за штат:</h3>
+									<ul class="tarrifs-service__staff">
+										<li class="tarrifs-service__staff-item">1 сотрудник отдела кадров </li>
+										<li class="tarrifs-service__staff-item">1 бухгалтер</li>
+										<li class="tarrifs-service__staff-item">1 Мидл Прожект-Менеджер</li>
+										<li class="tarrifs-service__staff-item">1 представитель-курьер</li>
+									</ul>
+									<ul class="tarrifs-service__advantages">
+										<li class="tarrifs-service__advantages-item">Помощь в организации охраны труда</li>
+										<li class="tarrifs-service__advantages-item">Мобильная служба безопасности</li>
+										<li class="tarrifs-service__advantages-item">Страхование ответственности Альфастрахование до 100 млн. руб.</li>
+										<li class="tarrifs-service__advantages-item">Онлайн доступ к сканированным документам сотрудника</li>
+										<li class="tarrifs-service__advantages-item">Проверка документов на легальность с подтверждением от МВД 1 раз в 2 мес.</li>
+									</ul>
+									<div class="tarrifs-service__cards">
+										<div class="tarrifs-service__card">Безлимитный юридический консалтинг на Узбекском и Русском языках для сотрудника</div>
+										<div class="tarrifs-service__card">Выезд юриста при задержании сотрудника полицией вне объекта 1 раз в 2 мес.</div>
+										<div class="tarrifs-service__card">Безлимитная консалтинговая поддержка в сфере миграции работодателю</div>
+									</div>
+								</div>
+								<div class="tarrifs-order">
+									<div class="tarrifs-order__body">
+										<div class="tarrifs-order__item">
+											<h3 class="tarrifs-order__title">Количество времени затраченное на оформление сотрудников</h3>
+											<div class="tarrifs-order__text">6 минут</div>
+										</div>
+										<div class="tarrifs-order__item">
+											<h3 class="tarrifs-order__title">Стоимость <br> обслуживания</h3>
+											<div class="tarrifs-order__text">3500 руб./мес.</div>
+										</div>
+									</div>
+									<a href="#" class="button">Заказать</a>
+								</div>
+							</div>
+							<div data-tab="2" class="tarrifs-body__item">
+								<div class="tarrifs-service">
+									<h3 class="tarrifs-service__title">При выводе за штат:</h3>
+									<ul class="tarrifs-service__staff">
+										<li class="tarrifs-service__staff-item">1 сотрудник отдела кадров </li>
+										<li class="tarrifs-service__staff-item">1 бухгалтер</li>
+										<li class="tarrifs-service__staff-item">1 Мидл Прожект-Менеджер</li>
+										<li class="tarrifs-service__staff-item">1 представитель-курьер</li>
+									</ul>
+									<ul class="tarrifs-service__advantages">
+										<li class="tarrifs-service__advantages-item">Помощь в организации охраны труда</li>
+										<li class="tarrifs-service__advantages-item">Мобильная служба безопасности</li>
+									</ul>
+									<div class="tarrifs-service__cards">
+										<div class="tarrifs-service__card">Безлимитный юридический консалтинг на Узбекском и Русском языках для сотрудника</div>
+										<div class="tarrifs-service__card">Выезд юриста при задержании сотрудника полицией вне объекта 1 раз в 2 мес.</div>
+										<div class="tarrifs-service__card">Безлимитная консалтинговая поддержка в сфере миграции работодателю</div>
+									</div>
+								</div>
+								<div class="tarrifs-order">
+									<div class="tarrifs-order__body">
+										<div class="tarrifs-order__item">
+											<h3 class="tarrifs-order__title">Количество времени затраченное на оформление сотрудников</h3>
+											<div class="tarrifs-order__text">6 минут</div>
+										</div>
+										<div class="tarrifs-order__item">
+											<h3 class="tarrifs-order__title">Стоимость <br> обслуживания</h3>
+											<div class="tarrifs-order__text">3500 руб./мес.</div>
+										</div>
+									</div>
+									<a href="#" class="button">Заказать</a>
+								</div>
+							</div>
+							<div data-tab="3" class="tarrifs-body__item">
+								<div class="tarrifs-service">
+									<h3 class="tarrifs-service__title">При выводе за штат:</h3>
+									<ul class="tarrifs-service__staff">
+										<li class="tarrifs-service__staff-item">1 сотрудник отдела кадров </li>
+										<li class="tarrifs-service__staff-item">1 бухгалтер</li>
+										<li class="tarrifs-service__staff-item">1 Мидл Прожект-Менеджер</li>
+										<li class="tarrifs-service__staff-item">1 представитель-курьер</li>
+									</ul>
+									<ul class="tarrifs-service__advantages">
+										<li class="tarrifs-service__advantages-item">Помощь в организации охраны труда</li>
+										<li class="tarrifs-service__advantages-item">Мобильная служба безопасности</li>
+										<li class="tarrifs-service__advantages-item">Страхование ответственности Альфастрахование до 100 млн. руб.</li>
+										<li class="tarrifs-service__advantages-item">Онлайн доступ к сканированным документам сотрудника</li>
+										<li class="tarrifs-service__advantages-item">Проверка документов на легальность с подтверждением от МВД 1 раз в 2 мес.</li>
+									</ul>
+									<div class="tarrifs-service__cards">
+										<div class="tarrifs-service__card">Безлимитный юридический консалтинг на Узбекском и Русском языках для сотрудника</div>
+										<div class="tarrifs-service__card">Выезд юриста при задержании сотрудника полицией вне объекта 1 раз в 2 мес.</div>
+										<div class="tarrifs-service__card">Безлимитная консалтинговая поддержка в сфере миграции работодателю</div>
+										<div class="tarrifs-service__card">Безлимитная консалтинговая поддержка в сфере миграции работодателю</div>
+										<div class="tarrifs-service__card">Безлимитная консалтинговая поддержка в сфере миграции работодателю</div>
+									</div>
+								</div>
+								<div class="tarrifs-order">
+									<div class="tarrifs-order__body">
+										<div class="tarrifs-order__item">
+											<h3 class="tarrifs-order__title">Количество времени затраченное на оформление сотрудников</h3>
+											<div class="tarrifs-order__text">6 минут</div>
+										</div>
+										<div class="tarrifs-order__item">
+											<h3 class="tarrifs-order__title">Стоимость <br> обслуживания</h3>
+											<div class="tarrifs-order__text">3500 руб./мес.</div>
+										</div>
+									</div>
+									<a href="#" class="button">Заказать</a>
+								</div>
+							</div>
+							<div data-tab="4" class="tarrifs-body__item">
+								<div class="tarrifs-service">
+									<h3 class="tarrifs-service__title">При выводе за штат:</h3>
+									<ul class="tarrifs-service__staff">
+										<li class="tarrifs-service__staff-item">1 сотрудник отдела кадров </li>
+										<li class="tarrifs-service__staff-item">1 бухгалтер</li>
+										<li class="tarrifs-service__staff-item">1 Мидл Прожект-Менеджер</li>
+										<li class="tarrifs-service__staff-item">1 представитель-курьер</li>
+									</ul>
+									<ul class="tarrifs-service__advantages">
+										<li class="tarrifs-service__advantages-item">Помощь в организации охраны труда</li>
+										<li class="tarrifs-service__advantages-item">Мобильная служба безопасности</li>
+										<li class="tarrifs-service__advantages-item">Страхование ответственности Альфастрахование до 100 млн. руб.</li>
+										<li class="tarrifs-service__advantages-item">Онлайн доступ к сканированным документам сотрудника</li>
+										<li class="tarrifs-service__advantages-item">Проверка документов на легальность с подтверждением от МВД 1 раз в 2 мес.</li>
+									</ul>
+									<div class="tarrifs-service__cards">
+										<div class="tarrifs-service__card">Безлимитный юридический консалтинг на Узбекском и Русском языках для сотрудника</div>
+										<div class="tarrifs-service__card">Выезд юриста при задержании сотрудника полицией вне объекта 1 раз в 2 мес.</div>
+										<div class="tarrifs-service__card">Безлимитная консалтинговая поддержка в сфере миграции работодателю</div>
+									</div>
+								</div>
+								<div class="tarrifs-order">
+									<div class="tarrifs-order__body">
+										<div class="tarrifs-order__item">
+											<h3 class="tarrifs-order__title">Количество времени затраченное на оформление сотрудников</h3>
+											<div class="tarrifs-order__text">6 минут</div>
+										</div>
+										<div class="tarrifs-order__item">
+											<h3 class="tarrifs-order__title">Стоимость <br> обслуживания</h3>
+											<div class="tarrifs-order__text">3500 руб./мес.</div>
+										</div>
+									</div>
+									<a href="#" class="button">Заказать</a>
+								</div>
+							</div>
+							<div data-tab="5" class="tarrifs-body__item">
+								<div class="tarrifs-service">
+									<h3 class="tarrifs-service__title">При выводе за штат:</h3>
+									<ul class="tarrifs-service__staff">
+										<li class="tarrifs-service__staff-item">1 сотрудник отдела кадров </li>
+										<li class="tarrifs-service__staff-item">1 бухгалтер</li>
+										<li class="tarrifs-service__staff-item">1 Мидл Прожект-Менеджер</li>
+										<li class="tarrifs-service__staff-item">1 представитель-курьер</li>
+									</ul>
+									<ul class="tarrifs-service__advantages">
+										<li class="tarrifs-service__advantages-item">Помощь в организации охраны труда</li>
+										<li class="tarrifs-service__advantages-item">Мобильная служба безопасности</li>
+										<li class="tarrifs-service__advantages-item">Страхование ответственности Альфастрахование до 100 млн. руб.</li>
+										<li class="tarrifs-service__advantages-item">Онлайн доступ к сканированным документам сотрудника</li>
+										<li class="tarrifs-service__advantages-item">Проверка документов на легальность с подтверждением от МВД 1 раз в 2 мес.</li>
+									</ul>
+									<div class="tarrifs-service__cards">
+										<div class="tarrifs-service__card">Безлимитный юридический консалтинг на Узбекском и Русском языках для сотрудника</div>
+										<div class="tarrifs-service__card">Выезд юриста при задержании сотрудника полицией вне объекта 1 раз в 2 мес.</div>
+										<div class="tarrifs-service__card">Безлимитная консалтинговая поддержка в сфере миграции работодателю</div>
+									</div>
+								</div>
+								<div class="tarrifs-order">
+									<div class="tarrifs-order__body">
+										<div class="tarrifs-order__item">
+											<h3 class="tarrifs-order__title">Количество времени затраченное на оформление сотрудников</h3>
+											<div class="tarrifs-order__text">6 минут</div>
+										</div>
+										<div class="tarrifs-order__item">
+											<h3 class="tarrifs-order__title">Стоимость <br> обслуживания</h3>
+											<div class="tarrifs-order__text">3500 руб./мес.</div>
+										</div>
+									</div>
+									<a href="#" class="button">Заказать</a>
+								</div>
+							</div>
+							<div data-tab="6" class="tarrifs-body__item">
+								<div class="tarrifs-service">
+									<h3 class="tarrifs-service__title">При выводе за штат:</h3>
+									<ul class="tarrifs-service__staff">
+										<li class="tarrifs-service__staff-item">1 сотрудник отдела кадров </li>
+										<li class="tarrifs-service__staff-item">1 бухгалтер</li>
+										<li class="tarrifs-service__staff-item">1 Мидл Прожект-Менеджер</li>
+										<li class="tarrifs-service__staff-item">1 представитель-курьер</li>
+									</ul>
+									<ul class="tarrifs-service__advantages">
+										<li class="tarrifs-service__advantages-item">Помощь в организации охраны труда</li>
+										<li class="tarrifs-service__advantages-item">Мобильная служба безопасности</li>
+										<li class="tarrifs-service__advantages-item">Страхование ответственности Альфастрахование до 100 млн. руб.</li>
+										<li class="tarrifs-service__advantages-item">Онлайн доступ к сканированным документам сотрудника</li>
+										<li class="tarrifs-service__advantages-item">Проверка документов на легальность с подтверждением от МВД 1 раз в 2 мес.</li>
+									</ul>
+									<div class="tarrifs-service__cards">
+										<div class="tarrifs-service__card">Безлимитный юридический консалтинг на Узбекском и Русском языках для сотрудника</div>
+										<div class="tarrifs-service__card">Выезд юриста при задержании сотрудника полицией вне объекта 1 раз в 2 мес.</div>
+										<div class="tarrifs-service__card">Безлимитная консалтинговая поддержка в сфере миграции работодателю</div>
+									</div>
+								</div>
+								<div class="tarrifs-order">
+									<div class="tarrifs-order__body">
+										<div class="tarrifs-order__item">
+											<h3 class="tarrifs-order__title">Количество времени затраченное на оформление сотрудников</h3>
+											<div class="tarrifs-order__text">6 минут</div>
+										</div>
+										<div class="tarrifs-order__item">
+											<h3 class="tarrifs-order__title">Стоимость <br> обслуживания</h3>
+											<div class="tarrifs-order__text">3500 руб./мес.</div>
+										</div>
+									</div>
+									<a href="#" class="button">Заказать</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="security" style="background-image: url('img/bg.svg');">
+					<div class="container">
+						<div class="security__body">
+							<div class="security__image">
+								<img src="img/security/01.svg" alt="">
+							</div>
+							<div class="security__info">
+								<h2 class="security__title">Мобильная служба безопасности </h2>
+								<div class="security__text">
+									с выездом до 1,5 часов на объект при проверках по тревожной кнопке
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="stock">
+					<div class="container">
+						<h2 class="stock__title title-dark">Акции месяца </h2>
+						<div class="stock__body">
+							<img class="stock__decor stock__decor--1" src="img/stock/decor1.png" alt="">
+							<img class="stock__decor stock__decor--2" src="img/stock/decor2.png" alt="">
+							<div class="stock__info">
+								<h3 class="stock__subtitle title-dark">При подключении к аутстаффингу в мае</h3>
+								<div class="stock__text">
+									каждая медкнижка <span>в 2 раза дешевле</span>
+								</div>
+								<a href="#" class="button stock__button">Оставить заявку</a>
+							</div>
+							<div class="stock__image">
+								<img src="img/stock/01.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="roles">
+					<div class="container">
+						<h2 class="roles__title title-dark title--center">
+							Для чего нужен тот или иной сотрудник?
+						</h2>
+						<div class="roles__slider swiper">
+							<div class="roles__wrapper swiper-wrapper">
+								<div class="roles__card roles-card swiper-slide">
+									<div class="roles-card__icon">
+										<img src="img/roles/icons/01.svg" alt="">
+									</div>
+									<h3 class="roles-card__title roles-card-title">Кадровый специалист</h3>
+									<div class="roles-card__text">
+										Трудоустройство и увольнение сотрудника с уведомлением в МВД. Проверка до кументов, оформление больничных, отпускных, заполнение карточек персонала и ведение табеля учета рабочего времени, подготовка документов для вычета НДФЛ.
+									</div>
+								</div>
+								<div class="roles__card roles-card swiper-slide">
+									<div class="roles-card__icon">
+										<img src="img/roles/icons/02.svg" alt="">
+									</div>
+									<h3 class="roles-card__title roles-card-title">Бухгалтер </h3>
+									<div class="roles-card__text">
+										Начисление зарплат, уплата налогов, участие в подготовке документов для подачи на вычет НДФЛ.
+									</div>
+								</div>
+								<div class="roles__card roles-card swiper-slide">
+									<div class="roles-card__icon">
+										<img src="img/roles/icons/03.svg" alt="">
+									</div>
+									<h3 class="roles-card__title roles-card-title">Документовед</h3>
+									<div class="roles-card__text">
+										Специалист миграционного отдела, участвующий в проверке документов персонала, помогающий в подготовке документов для оформления и курирующий своевременность оплаты чеков мигранта.
+									</div>
+								</div>
+								<div class="roles__card roles-card swiper-slide">
+									<div class="roles-card__icon">
+										<img src="img/roles/icons/04.svg" alt="">
+									</div>
+									<h3 class="roles-card__title roles-card-title">Представитель-курьер</h3>
+									<div class="roles-card__text">
+										Сотрудник компании, который перемещается между объектом и центральным офисом для оперативного сбора и передачи документов.
+									</div>
+								</div>
+								<div class="roles__card roles-card swiper-slide">
+									<div class="roles-card__icon">
+										<img src="img/roles/icons/05.svg" alt="">
+									</div>
+									<h3 class="roles-card__title roles-card-title">Специалист по охране труда</h3>
+									<div class="roles-card__text">
+										Помощь в оформлении документации по полному циклу охраны труда.
+									</div>
+								</div>
+								<div class="roles__card roles-card swiper-slide">
+									<div class="roles-card__icon">
+										<img src="img/roles/icons/06.svg" alt="">
+									</div>
+									<h3 class="roles-card__title roles-card-title">Прожект-Менеджер</h3>
+									<div class="roles-card__text">
+										Специалист компании «Содействие» с опытом работы в миграционной сфере.
+									</div>
+								</div>
+								<div class="roles__card roles-card swiper-slide">
+									<div class="roles-card__icon">
+										<img src="img/roles/icons/07.svg" alt="">
+									</div>
+									<h3 class="roles-card__title roles-card-title">Мобильная служба безопасности</h3>
+									<div class="roles-card__text">
+										Юридическое подразделение опытных специалистов, которые по звонку или тревожной кнопке реагируют на необходимость выезда и участия в прохождение проверок контролирующими органами.
+									</div>
+								</div>
+								<form action="#" class="roles__form form swiper-slide">
+									<h3 class="form__title roles-card-title">Появились вопросы?</h3>
+									<div class="form__descr">
+										Оставьте свои данные и мы вам перезвоним!
+									</div>
+									<div class="form__body">
+										<input tabindex="1" type="text" class="form__input important" placeholder="Ваше имя">
+										<input tabindex="2" type="tel" class="form__input important" placeholder="Ваш телефон">
+									</div>
+									<button tabindex="3" class="button form__button" type="submit">Связаться</button>
+							</form>
+							</div>
+							<div class="roles__nav">
+								<div class="swiper-button-prev"></div>
+  							<div class="swiper-button-next"></div>
+							</div>
+					</div>
+					<img src="img/roles/decor-1.svg" alt="" class="roles__decor roles__decor--1">
+					<img src="img/roles/decor-2.svg" alt="" class="roles__decor roles__decor--2">
+					<img src="img/roles/decor-3.svg" alt="" class="roles__decor roles__decor--3">
+				</section>
+				<section class="advantages" style="background-image: url('img/advantages/bg.svg');">
+					<div class="container">
+						<h2 class="title-dark advantages__title">Основные преимущества работы с нами</h2>
+						<div class="advantages__body">
+							<div class="advantages__item">
+								<div class="advantages__icon advantages__icon--1 advantages__icon--orange"></div>
+								<div class="advantages__text">
+									Возврат НДФЛ 13% от зарплатного проекта до 4200 руб. по Санкт-Петербургу;
+								</div>
+							</div>
+							<div class="advantages__item">
+								<div class="advantages__icon advantages__icon--2 advantages__icon--purple"></div>
+								<div class="advantages__text">
+									Страхование ответственности за персонал до 100 млн. руб. партнером АльфаСтрахование;
+								</div>
+							</div>
+							<div class="advantages__item">
+								<div class="advantages__icon advantages__icon--3 advantages__icon--yellow"></div>
+								<div class="advantages__text">
+									Выезд юриста в отделение полиции при задержании сотрудника полицией;
+								</div>
+							</div>
+							<div class="advantages__item">
+								<div class="advantages__icon advantages__icon--4 advantages__icon--orange"></div>
+								<div class="advantages__text">
+									Вы платите только за то количество дней, которое фактически числится персонал (выводя за штат сотрудника на 15 дней вы платите из расчета 50% стоимости услуг)
+								</div>
+							</div>
+							<div class="advantages__item">
+								<div class="advantages__icon advantages__icon--5 advantages__icon--purple"></div>
+								<div class="advantages__text">
+									Проверка документов на легальность и наличие штрафов/запретов на пребывание  по персоналу с подтверждением от МВД;
+								</div>
+							</div>
+							<div class="advantages__item">
+								<div class="advantages__icon advantages__icon--6 advantages__icon--yellow"></div>
+								<div class="advantages__text">
+									Персональная безлимитная консалтинговая юридическая поддержка в сфере миграции для работодателя;
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+        <section class="questions">
+					<div class="container">
+						<div class="questions__body questions-body">
+							<div class="questions-body__info">
+								<h2 class="questions-body__title title-dark">
+									Вопрос-ответ 
+								</h2>
+								<div class="questions-body__descr descr">
+									Частые вопросы
+								</div>
+								<ul class="questions-body__list" data-spollers="one">
+									<li class="questions-body__list-item questions-list-item">
+										<button class="questions-list-item__button" data-spoller type="button">
+											Могу ли я вывести 1-го человека за штат?
+										</button>
+										<div class="questions-list-item__body">
+											<div class="questions-list-item__text">
+												Мы занимаемся полным циклом оформления персонала и его легализации. Мы проводим предварительный аудит и помогаем с оформлением всех необходимых документов.
+											</div>
+										</div>
+									</li>
+									<li class="questions-body__list-item questions-list-item">
+										<button class="questions-list-item__button" data-spoller type="button">
+											Вы помогаете с оформлением документов для мигрантов?
+										</button>
+										<div class="questions-list-item__body">
+											<div class="questions-list-item__text">
+												Мы занимаемся полным циклом оформления персонала и его легализации. Мы проводим предварительный аудит и помогаем с оформлением всех необходимых документов.
+											</div>
+										</div>
+									</li>
+									<li class="questions-body__list-item questions-list-item">
+										<button class="questions-list-item__button" data-spoller type="button">
+											Если приехала проверка на объект кто с ней взаимодействует?
+										</button>
+										<div class="questions-list-item__body">
+											<div class="questions-list-item__text">
+												Мы занимаемся полным циклом оформления персонала и его легализации. Мы проводим предварительный аудит и помогаем с оформлением всех необходимых документов.
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="questions-body__image">
+								<img src="img/questions/01.svg" alt="">
+							</div>
+						</div>
+						<div class="questions__bottom questions-bottom">
+							<div class="questions-bottom__image">
+								<img src="img/questions/02.svg" alt="">
+
+							</div>
+							<div class="questions-bottom__body">
+								<div class="questions-bottom__text">
+									Собственное общежитие (размещение и оформление регистрации сотрудника по месту жительства) 
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="documents" style="background-image: url('img/bg.svg');">
+					<div class="documents__body documents-body">
+						<div class="container">
+							<div class="documents-body__content">
+								<div class="documents-body__info">
+										<h2 class="title-dark documents-body__title">Документы которые помогаем оформлять</h2>
+										<ul class="documents-body__list">
+											<li class="documents-body__item">
+												Проведем аудит документов мигранта 
+											</li>
+											<li class="documents-body__item">
+												Комплексно поможем оформить любые документы для легализации персонала 
+											</li>
+											<li class="documents-body__item">
+												Патент на работу, мед. книжки, подготовим документы для постановки на учет по месту жительства
+											</li>
+										</ul>
+								</div>
+								<div class="documents-body__card">
+										<div class="documents-body__card-image">
+											<img src="img/documents/01.svg" alt="">
+										</div>
+										<div class="documents-body__card-text">
+											Проверка документов на легальность и наличие штрафов/запретов на пребывание  по персоналу с подтверждением от МВД;
+										</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="documents__bottom documents-bottom">
+						<div class="documents-bottom__content">
+							<div class="documents-bottom__logo">
+								<img src="img/documents/logo.svg" alt="">
+							</div>
+							<div class="documents-bottom__body">
+								<h3 class="documents-bottom__title">
+									Зарплатный проект в банке «Сбербанк»
+								</h3>
+								<div class="documents-bottom__text">
+									Оформляем дебетовые карты Сбербанка для каждого сотрудника
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="calculation">
+					<div class="container">
+						<div class="calculation__row">
+							<div class="calculation__body">
+								<h2 class="calculation__title title">
+									Онлайн расчет стоимости из расчета на 1-го сотрудника
+								</h2>
+								<div class="calculation__descr descr">
+									Выберите количество человек и зарплатный проект, чтобы узнать общую сумму налогов от зарплаты, бонусные компании «Содействие» и итоговую сумму к выплате зарплаты сотруднику на банковскую карту.
+								</div>
+								<form class="calculation__form calculation-form" action="#">
+									<div class="calculation-form__selects">
+										<div class="calculation-form__select calculation-select">
+											<button class="calculation-select__header" type="button">
+												1 чел.
+											</button>
+											<ul class="calculation-select__list">
+												<li class="calculation-select__item active" data-value="1">
+													1 чел.
+												</li>
+												<li class="calculation-select__item" data-value="2">
+													2-5 чел.
+												</li>
+												<li class="calculation-select__item" data-value="3">
+													6-10 чел.
+												</li>
+												<li class="calculation-select__item" data-value="4">
+													11-20 чел.
+												</li>
+												<li class="calculation-select__item" data-value="5">
+													21-40 чел.
+												</li>
+												<li class="calculation-select__item" data-value="6">
+													41 и более чел.
+												</li>
+											</ul>
+										</div>
+										<div class="calculation-form__select calculation-select">
+											<button class="calculation-select__header" type="button">
+												Зарплатый проект
+											</button>
+											<ul class="calculation-select__list">
+												<li class="calculation-select__item active">
+													Зарплатый проект
+												</li>
+												<li class="calculation-select__item">
+													2-5 чел.
+												</li>
+												<li class="calculation-select__item">
+													6-10 чел.
+												</li>
+												<li class="calculation-select__item">
+													11-20 чел.
+												</li>
+												<li class="calculation-select__item">
+													21-40 чел.
+												</li>
+												<li class="calculation-select__item">
+													41 и более чел.
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="calculation-form__bottom">
+										<div class="calculation-form__total">ИТОГО: <span></span></div>
+										<button class="calculation-form__button button button--orange" type="submit" tabindex="1">Посчитать</button>
+									</div>
+									<div class="calculation-form__image">
+										<img src="img/calculation/01.svg" alt="">
+									</div>
+								</form>
+							</div>
+							<div class="calculation__image">
+								<img src="img/calculation/01.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="user-benefit">
+					<div class="container">
+						<div class="user-benefit__body">
+							<div class="user-benefit__text user-benefit__text--1">
+								Онлайн доступ работодателю к сканированным документам оформленного персонала в любое время
+							</div>
+							<div class="user-benefit__image">
+								<img src="img/user-benefit/01.svg" alt="">
+							</div>
+							<div class="user-benefit__text user-benefit__text--2">
+								Система автоматического отслеживания сроков окончания документов персонала 
+								с персональным доступом работодателю 
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="reviews outstaffing-reviews">
+					<div class="container">
+						<div class="reviews__body">
+							<h2 class="reviews__title title title--center">
+								Зачем говорить о себе самому, когда это гораздо лучше могут сделать <span>твои клиенты</span>
+							</h2>
+							<h3 class="reviews__subtitle">ОТЗЫВЫ</h3>
+							<div class="outstaffing-reviews__content">
+								<div class="outstaffing-reviews__slider swiper">
+									<div class="outstaffing-reviews__slider-wrapper swiper-wrapper">
+										<div class="outstaffing-reviews__slide swiper-slide">
+											<div class="outstaffing-reviews__slide-body">
+												<div class="outstaffing-reviews__name">Имя Фамилия</div>
+												<div class="outstaffing-reviews__text">
+													В своём стремлении повысить качество жизни, они забывают, что сложившаяся структура организации требует определения и уточнения инновационных методов управления процессами. Реплицированные с зарубежных источников, современные исследования будут ассоциативно распределены по отраслям. 
+												</div>
+												<div class="outstaffing-reviews__date">05.04.22</div>
+											</div>
+										</div>
+										<div class="outstaffing-reviews__slide swiper-slide">
+											<div class="outstaffing-reviews__name">Имя Фамилия</div>
+											<div class="outstaffing-reviews__text">
+												В своём стремлении повысить качество жизни, они забывают, что сложившаяся структура организации требует определения и уточнения инновационных методов управления процессами. Реплицированные с зарубежных источников, современные исследования будут ассоциативно распределены по отраслям. 
+											</div>
+											<div class="outstaffing-reviews__date">05.04.22</div>
+										</div>
+										<div class="outstaffing-reviews__slide swiper-slide">
+											<div class="outstaffing-reviews__name">Имя Фамилия</div>
+											<div class="outstaffing-reviews__text">
+												В своём стремлении повысить качество жизни, они забывают, что сложившаяся структура организации требует определения и уточнения инновационных методов управления процессами. Реплицированные с зарубежных источников, современные исследования будут ассоциативно распределены по отраслям. 
+											</div>
+											<div class="outstaffing-reviews__date">05.04.22</div>
+										</div>
+										<div class="outstaffing-reviews__slide swiper-slide">
+											<div class="outstaffing-reviews__name">Имя Фамилия</div>
+											<div class="outstaffing-reviews__text">
+												В своём стремлении повысить качество жизни, они забывают, что сложившаяся структура организации требует определения и уточнения инновационных методов управления процессами. Реплицированные с зарубежных источников, современные исследования будут ассоциативно распределены по отраслям. 
+											</div>
+											<div class="outstaffing-reviews__date">05.04.22</div>
+										</div>
+										<div class="outstaffing-reviews__slide swiper-slide">
+											<div class="outstaffing-reviews__name">Имя Фамилия</div>
+											<div class="outstaffing-reviews__text">
+												В своём стремлении повысить качество жизни, они забывают, что сложившаяся структура организации требует определения и уточнения инновационных методов управления процессами. Реплицированные с зарубежных источников, современные исследования будут ассоциативно распределены по отраслям. 
+											</div>
+											<div class="outstaffing-reviews__date">05.04.22</div>
+										</div>
+										<div class="outstaffing-reviews__slide swiper-slide">
+											<div class="outstaffing-reviews__name">Имя Фамилия</div>
+											<div class="outstaffing-reviews__text">
+												В своём стремлении повысить качество жизни, они забывают, что сложившаяся структура организации требует определения и уточнения инновационных методов управления процессами. Реплицированные с зарубежных источников, современные исследования будут ассоциативно распределены по отраслям. 
+											</div>
+											<div class="outstaffing-reviews__date">05.04.22</div>
+										</div>
+									</div>
+									<div class="outstaffing-reviews__nav">
+										<div class="outstaffing-reviews__prev"></div>
+										<div class="outstaffing-reviews__next"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="news">
+					<div class="container">
+						<h2 class="news__title title">Новости</h2>
+						<div class="news__slider slider swiper">
+							<div class="slider__wrapper swiper-wrapper">
+								<div class="slider__card slider-card swiper-slide">
+									<a href="#" class="slider-card__image">
+										<img src="img/news/01.jpg" alt="форум">
+									</a>
+									<div class="slider-card__info">
+										<div class="slider-card__name">
+											Иностранным гражданам будут
+											выдавать новые формы патентов
+									</div>
+										<div class="slider-card__date">20.02.22</div>
+									</div>
+									<a href="#" class="slider-card__link arrow-link icon-arrow1">Перейти</a>
+								</div>
+								<div class="slider__card slider-card swiper-slide">
+									<a href="#" class="slider-card__image">
+										<img src="img/news/02.png" alt="форум">
+									</a>
+									<div class="slider-card__info">
+										<div class="slider-card__name">Новый МРОТ с 1 января 2022 г</div>
+										<div class="slider-card__date">20.02.22</div>
+									</div>
+									<a href="#" class="slider-card__link arrow-link icon-arrow1">Перейти</a>
+								</div>
+								<div class="slider__card slider-card swiper-slide">
+									<a href="#" class="slider-card__image">
+										<img src="img/news/03.png" alt="форум">
+									</a>
+									<div class="slider-card__info">
+										<div class="slider-card__name">
+											Вакцинация иностранных 
+											граждан в Петербургре
+										</div>
+										<div class="slider-card__date">20.02.22</div>
+									</div>
+									<a href="#" class="slider-card__link arrow-link icon-arrow1">Перейти</a>
+								</div>
+								<div class="slider__card slider-card swiper-slide">
+									<a href="#" class="slider-card__image">
+										<img src="img/news/01.jpg" alt="форум">
+									</a>
+									<div class="slider-card__info">
+										<div class="slider-card__name">
+											Иностранным гражданам будут
+											выдавать новые формы патентов
+									</div>
+										<div class="slider-card__date">20.02.22</div>
+									</div>
+									<a href="#" class="slider-card__link arrow-link icon-arrow1">Перейти</a>
+								</div>
+								<div class="slider__card slider-card swiper-slide">
+									<a href="#" class="slider-card__image">
+										<img src="img/news/02.png" alt="форум">
+									</a>
+									<div class="slider-card__info">
+										<div class="slider-card__name">Новый МРОТ с 1 января 2022 г</div>
+										<div class="slider-card__date">20.02.22</div>
+									</div>
+									<a href="#" class="slider-card__link arrow-link icon-arrow1">Перейти</a>
+								</div>
+								<div class="slider__card slider-card swiper-slide">
+									<a href="#" class="slider-card__image">
+										<img src="img/news/03.png" alt="форум">
+									</a>
+									<div class="slider-card__info">
+										<div class="slider-card__name">
+											Вакцинация иностранных 
+											граждан в Петербургре
+										</div>
+										<div class="slider-card__date">20.02.22</div>
+									</div>
+									<a href="#" class="slider-card__link arrow-link icon-arrow1">Перейти</a>
+								</div>
+							</div>
+							<div class="slider__nav">
+								<div class="swiper-button-prev"></div>
+  							<div class="swiper-button-next"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="mobile-app">
+					<div class="container mobile-app__container">
+						<div class="mobile-app__content">
+							<div class="mobile-app__image">
+								<img src="img/mobile-app/01.svg" alt="">
+							</div>
+							<div class="mobile-app__body">
+								<h2 class="title-dark mobile-app__title">
+									Готовим к запуску <span>мобильное приложение</span>
+								</h2>
+								<div class="mobile-app__descr">
+									для оперативного взаимодействия с иностранным персоналом. 
+								</div>
+								<a href="#" class="mobile-app__button button">Получить бета-версию</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer footer--bg">
+				<div class="footer__company footer__column">
+							<a href="#" class="footer__logo">
+								<img src="img/logo.png" alt="Логотип" class="logo__image">
+							</a>
+							<div class="footer__copyright">
+								© Все права защищены. ООО "Содействие" 2014-2021
+							</div>
+				</div>
+				<div class="footer__column">
+							<div class="footer__services">
+								<h2 class="footer__title">Услуги</h2>
+								<ul class="footer__list">
+									<li class="footer__item">
+										<a href="#" class="footer__link">Аутсорсинг персонала</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Аутстаффинг персонала</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Отзывы</a>
+									</li>
+								</ul>
+							</div>
+				</div>
+				<div class="footer__column">
+							<div class="footer__contacts">
+								<h2 class="footer__title">Контакты</h2>
+								<ul class="footer__list">
+									<li class="footer__item">
+										<div class="footer__addres">Ул.Чапаева, д.25, Санкт-Петербург</div>
+										<a href="tel:88124994534" class="footer__link">8 (812) 499-45-34</a>
+									</li>
+									<li class="footer__item">
+										Телефон в Москве:
+										<a href="tel:84994994534" class="footer__link">8(499) 499-45-34</a>
+										<a href="mailto:info@sodst.ru" class="footer__link">e-mail: info@sodst.ru</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__chedule">
+								<h2 class="footer__title">Режим работы:
+								</h2>
+								ПН - ПТ: 09:00 - 19:30 <br> СБ - ВС: 12:00 - 16:00
+							</div>
+				</div>
+				<div class="footer__map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.530096936339!2d135.1252274450954!3d48.44635781342201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5efae84c0221147b%3A0x316300e95f89109b!2z0JvQvtC60L7QvNC-0YLQuNCy0L3QvtC1INCU0LXQv9C-!5e0!3m2!1sru!2sru!4v1655021164961!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="footer__bottom footer-bottom">
+						<div class="footer-bottom__body">
+							<div class="footer-bottom__info">
+								ООО "Содействие" <br> ИНН 7813279922, ОГРН 1177847191609
+							</div>
+							<a href="#" class="footer-bottom__link">Договор оферты</a>
+						</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script src="js/script.min.js"></script>
+	</body>
+</html>	
