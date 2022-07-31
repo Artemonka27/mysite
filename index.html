@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title></title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container header__container">
+				<div class="header__body">
+					<a href="#" class="logo header__logo">
+						<img src="img/logo.svg" alt="Logo">
+					</a>
+					<div class="header__select select">
+						<button class="select__button" type="button">
+							Город<span class="select__name">Уфа</span>
+						</button>
+						<ul class="select__list">
+							<li class="select__item">
+								Хабаровск
+							</li>
+							<li class="select__item">
+								Москва
+							</li>
+							<li class="select__item">
+								Владивосток
+							</li>
+						</ul>
+					</div>
+					<div class="header__actions" data-da=".header__menu, append, 600">
+						<a href="#" class="header__button button">Вход</a>
+						<a href="#" class="header__button button button_blue">Регистрация</a>
+					</div>
+					<button class="burger" type="button">
+						<span></span>
+					</button>
+				</div>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link text" href="#">Главная</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link text" data-href="catalog" href="#catalog">Каталог товаров</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link text" href="#types">Виды достовок</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link text " href="#calculate">Калькулятор</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link text" href="#">Сотрудничество</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hello">
+				<div class="container hello__container">
+					<div data-anim class="hello__info">
+						<h1 class="hello__title title">Самая быстрая <span class="text-gradient">логистическая</span> компания</h1>
+						<div class="hello__descr text descr">Самая быстрая логистическая компания</div>
+						<div class="hello__actions">
+							<a href="#" class="button button_blue button_arrow hello__button hello__button_1">Каталог</a>
+							<a href="#" class="button hello__button hello__button_2">Подробнее</a>
+						</div>
+					</div>
+					<div class="hello__media">
+						<img class="hello__image" class="hello__image" src="img/hello/image.svg" alt="">
+						<div class="hello__pink-decor pink-decor"></div>
+						<div class="hello__blue-decor blue-decor"></div>
+						<div class="hello__radial-decor hello__radial-decor_1"></div>
+						<div class="hello__radial-decor hello__radial-decor_2"></div>
+					</div>
+					<button data-anim class="hello__scroll" type="button"></button>
+				</div>
+			</section>
+			<section id="catalog" class="catalog">
+				<div class="container catalog__container">
+					<h2 data-anim class="title catalog__title">Каталог товаров</h2>
+					<div class="catalog__content">
+						<div data-anim class="catalog__card card">
+							<div class="card__body">
+								<a class="card__image" href="#">
+									<img src="img/catalog/01.jpg" alt="">
+								</a>
+								<div class="card__info">
+									<ul class="card__brands card-brands">
+										<li class="card-brands__item">
+											<img src="img/catalog/brands/01.png" alt="">
+										</li>
+										<li class="card-brands__item">
+											<img src="img/catalog/brands/02.png" alt="">
+										</li>
+									</ul>
+									<h3 class="card__title">Техника</h3>
+									<div class="card__text text">Она положила руку на живот, ила руку на живот, прислушалась: мальчик
+										прислушалась: мальчик двигался там, трепыхался, как сердце от бега.</div>
+									<a href="#" class="card__button button">Подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div data-anim class="catalog__card card">
+							<div class="card__body">
+								<a class="card__image" href="#">
+									<img src="img/catalog/02.jpg" alt="">
+								</a>
+								<div class="card__info">
+									<ul class="card__brands card-brands">
+										<li class="card-brands__item">
+											<img src="img/catalog/brands/04.png" alt="">
+										</li>
+										<li class="card-brands__item">
+											<img src="img/catalog/brands/03.png" alt="">
+										</li>
+									</ul>
+									<h3 class="card__title">Одежда</h3>
+									<div class="card__text text">Она положила руку на живот, прислушалась: мальчик двигался там,
+										трепыхался, как сердце от бега.</div>
+									<a href="#" class="card__button button">Подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div data-anim class="catalog__card card">
+							<div class="card__body">
+								<a class="card__image" href="#">
+									<img src="img/catalog/03.jpg" alt="">
+								</a>
+								<div class="card__info">
+									<ul class="card__brands card-brands">
+										<li class="card-brands__item">
+											<img src="img/catalog/brands/05.png" alt="">
+										</li>
+										<li class="card-brands__item">
+											<img src="img/catalog/brands/06.png" alt="">
+										</li>
+									</ul>
+									<h3 class="card__title">Косметика</h3>
+									<div class="card__text  text">Она положила руку на живот, прислушалась: мальчик двигался там,
+										трепыхался, как сердце от бега.</div>
+									<a href="#" class="card__button button">Подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div data-anim class="catalog__card card">
+							<div class="card__body">
+								<a class="card__image" href="#">
+									<img src="img/catalog/04.jpg" alt="">
+								</a>
+								<div class="card__info">
+									<ul class="card__brands card-brands">
+										<li class="card-brands__item">
+											<img src="img/catalog/brands/07.png" alt="">
+										</li>
+										<li class="card-brands__item">
+											<img src="img/catalog/brands/08.png" alt="">
+										</li>
+									</ul>
+									<h3 class="card__title">Парфюмерия</h3>
+									<div class="card__text text">Она положила руку на живот, прислушалась: мальчик двигался там,
+										трепыхался, как сердце от бега.</div>
+									<a href="#" class="card__button button">Подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div class="blue-decor catalog__blue-decor"></div>
+						<div class="pink-decor catalog__pink-decor"></div>
+					</div>
+				</div>
+			</section>
+			<section id="types" class="types">
+				<div class="container types__container">
+					<div class="types__info">
+            <div data-anim class="types__head head">
+              <h2 class="head__title title">Виды доставок</h2>
+              <div class="head__descr descr">Самая быстрая логистическая компания</div>
+            </div>
+						<ul data-anim class="types__list" data-spollers="one">
+							<li class="types__item item-types">
+								<button class="item-types__button" data-spoller type="button">
+                  <span class="item-types__icon"><img src="img/icons/countries/es.png" alt=""></span>
+                  <span class="item-types__button-text">Доставка из Европы</span>
+                </button>
+                <div class="item-types__body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempore unde rerum et natus rem officia laborum eaque? Dicta maiores vel cupiditate, aliquam enim sit consequatur ea a corrupti amet?
+                </div>
+							</li>
+              <li class="types__item item-types">
+								<button class="item-types__button" data-spoller type="button">
+                  <span class="item-types__icon"><img src="img/icons/countries/usa.png" alt=""></span>
+                  <span class="item-types__button-text">Доставка из Европы</span>
+                </button>
+                <div class="item-types__body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempore unde rerum et natus rem officia laborum eaque? Dicta maiores vel cupiditate, aliquam enim sit consequatur ea a corrupti amet?
+                </div>
+							</li>
+              <li class="types__item item-types">
+								<button class="item-types__button" data-spoller type="button">
+                  <span class="item-types__icon"><img src="img/icons/countries/georgia.png" alt=""></span>
+                  <span class="item-types__button-text">Доставка из Европы</span>
+                </button>
+                <div class="item-types__body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempore unde rerum et natus rem officia laborum eaque? Dicta maiores vel cupiditate, aliquam enim sit consequatur ea a corrupti amet?
+                </div>
+							</li>
+						</ul>
+					</div>
+					<div class="types__media">
+            <div class="types__image">
+              <img src="img/types/globe.svg" alt="">
+            </div>
+            <img src="img/decor/globe-decor.svg" alt="" class="types__globe-decor">
+					</div>
+          <div class="blue-decor types__blue-decor"></div>
+					<div class="pink-decor types__pink-decor"></div>
+				</div>
+			</section>
+			<section id="calculate" class="calculate">
+				<div class="container calculate__container">
+					<div class="calculate__media">
+						<img src="img/calculate/01.svg" alt="" class="calculate__image">
+						<div class="blue-decor calculate__blue-decor"></div>
+						<div class="pink-decor calculate__pink-decor"></div>
+					</div>
+					<div class="calculate__info">
+						<div data-anim class="calculate__head head">
+              <h2 class="head__title title">Калькулятор</h2>
+              <div class="head__descr descr">Самая быстрая логистическая компания</div>
+            </div>
+						<form action="#" class="calculate__form calculate-form">
+							<div class="calculate-form__body">
+								<div data-anim class="calculate-form__row">
+									<div class="calculate-form__item">
+										<div class="calculate-form__item-title">Страна отправителя</div>
+										<div class="calculate-form__select calculate-select">
+											<button type="button" class="calculate-select__head">
+												<span class="calculate-select__icon">
+													<img src="img/icons/countries/georgia.png" alt="">
+												</span>
+												<span class="calculate-select__country">Грузия</span>
+											</button>
+											<ul class="calculate-select__list">
+												<li class="calculate-select__item">
+													<div class="calculate-select__icon">
+														<img src="img/icons/countries/georgia.png" alt="">
+													</div>
+													<div class="calculate-select__country">Грузия</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="calculate-form__item">
+										<div class="calculate-form__item-title">Страна отправителя</div>
+										<div class="calculate-form__select calculate-select">
+											<button type="button" class="calculate-select__head">
+												<span class="calculate-select__icon">
+													<img src="img/icons/countries/es.png" alt="">
+												</span>
+												<span class="calculate-select__country">Россия</span>
+											</button>
+											<ul class="calculate-select__list">
+												<li class="calculate-select__item">
+													<div class="calculate-select__icon">
+														<img src="img/icons/countries/georgia.png" alt="">
+													</div>
+													<div class="calculate-select__country">Грузия</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<button type="button" class="calculate-form__change"></button>
+								</div>
+								<div data-anim class="calculate-form__row">
+									<div class="calculate-form__item">
+										<div class="calculate-form__item-title">Город отправителя</div>
+										<div class="calculate-form__select calculate-select">
+											<button type="button" class="calculate-select__head">
+												<span class="calculate-select__country">Грузия</span>
+											</button>
+											<ul class="calculate-select__list">
+												<li class="calculate-select__item">
+													<div class="calculate-select__country">Грузия</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="calculate-form__item">
+										<div class="calculate-form__item-title">Город получателя</div>
+										<div class="calculate-form__select calculate-select">
+											<button type="button" class="calculate-select__head">
+												<span class="calculate-select__country">Россия</span>
+											</button>
+											<ul class="calculate-select__list">
+												<li class="calculate-select__item">
+													<div class="calculate-select__country">Грузия</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div data-anim class="calculate-form__row">
+									<div class="calculate-form__item">
+										<div class="calculate-form__item-title">Вес</div>
+										<div class="calculate-form__weight">
+											<input type="text" placeholder="Вес">
+										</div>
+									</div>
+									<div class="calculate-form__item">
+										<div class="calculate-form__item-title">Размер</div>
+										<div class="calculate-form__select calculate-select">
+											<button type="button" class="calculate-select__head">
+												<span class="calculate-select__country">Маленький</span>
+											</button>
+											<ul class="calculate-select__list">
+												<li class="calculate-select__item">
+													<div class="calculate-select__country">Средний</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="calculate-form__footer">
+								<button type="submit" class="calculate-form__button button button_blue">Расчитать</button>
+								<div class="calculate-form__total">
+									Итого <span>1 200</span>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container footer__container">
+				<a href="#" class="logo footer__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</a>
+				<a href="#" class="footer__terms text">Пользовательское соглашение</a>
+			</div>
+		</footer>
+	</div>
+
+
+	<script src="js/main.min.js" type="module"></script>
+</body>
+
+</html>
